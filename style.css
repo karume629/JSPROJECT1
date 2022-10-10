@@ -8,6 +8,7 @@ html {
 
   h1{
       text-align: center;
+      font-style: italic;
   }
 
   /* Add a black background color to the top navigation */
