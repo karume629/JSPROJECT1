@@ -4,57 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAN DRAWER</title>
+    <title>Lyrics search app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>LYRIx</h1>
-    <header>
-        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">  
-         <nav>
-             <ul>
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Genres</a></li>
-                 <li><a href="#">favorites</a></li>
-             </ul>
-         </nav>
-     </header>
-
-
-     <div class="lyrics-input">
-        <h2>Get lyrics</h2> 
-        <div class="input-wrap">
-           <span class="material-icons-outlined">
-               person
-           </span>
-           <input type="text"
-                  id="artistName"
-                  placeholder="Artist Name"
-           />
+    <div class="container">
+        <div class="intro-text">
+            <h1>Learn your favorite</h1>
+            <h2>song lyrics</h2>
         </div>
-        
-        <div class="lyrics-input"> 
-            <div class="input-wrap">
-               <span class="material-icons-outlined">
-                   album
-               </span>
-               <input type="text"
-                      id="songName"
-                      placeholder="Song Name"
-               />
-            </div>  
-            <button type="button" class="fetchBtn">
-                Get Lyrics!
-            </button>
-         </div>
-         <div class="loading">
-            <p>Fetching Lyrics.....</p>
-         </div>
-         <div class="lyrics-output">
-
-         </div>
-
-     </div>
+        <div id="lyrics-search">
+            <form action="" id="searchMe">
+                <input type="text" id="lyricSearch" placeholder="artist name or song title"/>
+            </form>
+            <div id="search-result">
+                
+            </div>
+        </div>
+    </div>
     
       
 </body>

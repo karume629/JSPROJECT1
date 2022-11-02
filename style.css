@@ -1,41 +1,71 @@
-h1{
-    text-align: center;
+html {
+    box-sizing:border-box;
 }
 
-header img {
-    height: 80px;
-    margin: 40px;
+/**Use pseudo elements to set some static styles**/
+*,
+*:before,
+*:after {
+    margin:0;
+    Padding:0;
 }
 
 body {
-    height: 125vh;
-    background-image: url('./images/background.jpg');
-    background-size: cover;
-    font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px;
+    background:#333333;
 }
 
-header {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
+.container {
+    margin:0 auto;
 }
 
-header * {
-    display: inline;
+::placeholder {
+    color:gold;
 }
 
-header li {
-    margin: 20px;
+.intro-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/**If the device doesn't have any of the first three font-family sans-serif will automatically be used **/
+    padding:2rem 0;
+    color:gold;
 }
 
-header li a {
-    color: whitesmoke;
-    text-decoration: none;
+/**Styling the h1 header(learn your favourite):centering the h1 element**/
+h1 {
+    text-align:center;
+    padding:1rem 0;
+}
+
+/**Styling the h1 header(learn your favourite):centering the h1 element**/
+h2 {
+    text-align:center;
+    padding:1rem 0;
+}
+
+#lyrics-search {
+    text-align:center;
+    align-items:center;
+    margin:20px;
+    padding:20px;
+}
+
+form {
+    margin:0 auto;
+    padding-left:10rem;
+}
+
+/**style the input field using its id(lyricSearch)**/
+#lyricSearch {
+    background-color: transparent;
+    color:#eeeeee;
+    outline:none;
+    height:30px;
+    width:64%;
+    margin:0 auto;
+    padding-right:2rem;
+    font-size:16px;
+    font-family:cursive;
+    outline-style:none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #eeeeee;
 }
